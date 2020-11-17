@@ -1,10 +1,10 @@
 <template>
   <div class="login-page">
     <div>
-      <input ref="username-field" v-model="username" />
+      <input ref="username-field" aria-label="Username" v-model="username" />
     </div>
     <div>
-      <input ref="password-field" type="password" v-model="password" />
+      <input ref="password-field" aria-label="Password" type="password" v-model="password" />
     </div>
     <div>
       <button ref="login-button" @click="login">Login</button>
