@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
 
-import Login from '@/pages/Login.vue';
+import Login from '@/pages/Login/Login.vue';
 
 describe('Login', () => {
   it('sends the login event with the form data', () => {

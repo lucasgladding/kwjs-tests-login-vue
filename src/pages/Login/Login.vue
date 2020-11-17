@@ -15,6 +15,11 @@
 <script lang="ts">
 import Vue from 'vue';
 
+export interface LoginEvent {
+  username: string;
+  password: string;
+}
+
 const Login = Vue.extend({
   data() {
     return {
