@@ -19,8 +19,8 @@ const LoginContainer = Vue.extend({
     },
   },
   methods: {
-    login({ username, password }: LoginEvent) {
-      this.authentication.authenticate(username, password);
+    login(data: LoginEvent) {
+      this.authentication.authenticate(data);
     },
   },
 });

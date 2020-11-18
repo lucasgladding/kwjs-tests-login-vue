@@ -15,9 +15,7 @@ describe('Login container', () => {
     const wrapper = mount(LoginContainer, {
       propsData: { authentication },
     });
-    wrapper.findComponent(Login).findComponent({ ref: 'username-field' }).setValue(data.username);
-    wrapper.findComponent(Login).findComponent({ ref: 'password-field' }).setValue(data.password);
-    wrapper.findComponent(Login).findComponent({ ref: 'login-button' }).trigger('click');
-    expect(authentication.authenticate).toHaveBeenCalledWith(data.username, data.password);
+    wrapper.findComponent(Login).vm.$emit('login', data);
+    expect(authentication.authenticate).toHaveBeenCalledWith(data);
   });
 });
