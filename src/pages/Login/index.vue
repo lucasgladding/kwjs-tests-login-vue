@@ -21,6 +21,7 @@ const LoginContainer = Vue.extend({
   methods: {
     login(data: LoginEvent) {
       this.authentication.authenticate(data);
+      this.$router.push('welcome');
     },
   },
 });
