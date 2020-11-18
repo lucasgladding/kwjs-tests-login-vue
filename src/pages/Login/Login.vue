@@ -1,5 +1,5 @@
 <template>
-  <div class="login-page">
+  <div>
     <div>
       <input ref="username-field" aria-label="Username" v-model="username" />
     </div>
